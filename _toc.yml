@@ -1,0 +1,130 @@
+# Synthesized table of contents for import into ALPS.
+# The upstream repository is a notebook collection with no Jupyter Book TOC;
+# this file gives it a book structure without altering any lesson content.
+
+format: jb-book
+root: README
+parts:
+  - caption: "Introduction"
+    chapters:
+      - file: 1-Introduction/README
+      - file: 1-Introduction/1-intro-to-ML/README
+        sections:
+          - file: 1-Introduction/1-intro-to-ML/assignment
+      - file: 1-Introduction/2-history-of-ML/README
+        sections:
+          - file: 1-Introduction/2-history-of-ML/assignment
+      - file: 1-Introduction/3-fairness/README
+        sections:
+          - file: 1-Introduction/3-fairness/assignment
+      - file: 1-Introduction/4-techniques-of-ML/README
+        sections:
+          - file: 1-Introduction/4-techniques-of-ML/assignment
+  - caption: "Regression"
+    chapters:
+      - file: 2-Regression/README
+      - file: 2-Regression/1-Tools/README
+        sections:
+          - file: 2-Regression/1-Tools/assignment
+          - file: 2-Regression/1-Tools/notebook
+      - file: 2-Regression/2-Data/README
+        sections:
+          - file: 2-Regression/2-Data/assignment
+          - file: 2-Regression/2-Data/notebook
+      - file: 2-Regression/3-Linear/README
+        sections:
+          - file: 2-Regression/3-Linear/assignment
+          - file: 2-Regression/3-Linear/notebook
+      - file: 2-Regression/4-Logistic/README
+        sections:
+          - file: 2-Regression/4-Logistic/assignment
+          - file: 2-Regression/4-Logistic/notebook
+  - caption: "Web App"
+    chapters:
+      - file: 3-Web-App/README
+      - file: 3-Web-App/1-Web-App/README
+        sections:
+          - file: 3-Web-App/1-Web-App/assignment
+          - file: 3-Web-App/1-Web-App/notebook
+  - caption: "Classification"
+    chapters:
+      - file: 4-Classification/README
+      - file: 4-Classification/1-Introduction/README
+        sections:
+          - file: 4-Classification/1-Introduction/assignment
+          - file: 4-Classification/1-Introduction/notebook
+      - file: 4-Classification/2-Classifiers-1/README
+        sections:
+          - file: 4-Classification/2-Classifiers-1/assignment
+          - file: 4-Classification/2-Classifiers-1/notebook
+      - file: 4-Classification/3-Classifiers-2/README
+        sections:
+          - file: 4-Classification/3-Classifiers-2/assignment
+          - file: 4-Classification/3-Classifiers-2/notebook
+      - file: 4-Classification/4-Applied/README
+        sections:
+          - file: 4-Classification/4-Applied/assignment
+          - file: 4-Classification/4-Applied/notebook
+  - caption: "Clustering"
+    chapters:
+      - file: 5-Clustering/README
+      - file: 5-Clustering/1-Visualize/README
+        sections:
+          - file: 5-Clustering/1-Visualize/assignment
+          - file: 5-Clustering/1-Visualize/notebook
+      - file: 5-Clustering/2-K-Means/README
+        sections:
+          - file: 5-Clustering/2-K-Means/assignment
+          - file: 5-Clustering/2-K-Means/notebook
+  - caption: "Nlp"
+    chapters:
+      - file: 6-NLP/README
+      - file: 6-NLP/1-Introduction-to-NLP/README
+        sections:
+          - file: 6-NLP/1-Introduction-to-NLP/assignment
+      - file: 6-NLP/2-Tasks/README
+        sections:
+          - file: 6-NLP/2-Tasks/assignment
+      - file: 6-NLP/3-Translation-Sentiment/README
+        sections:
+          - file: 6-NLP/3-Translation-Sentiment/assignment
+      - file: 6-NLP/4-Hotel-Reviews-1/README
+        sections:
+          - file: 6-NLP/4-Hotel-Reviews-1/assignment
+          - file: 6-NLP/4-Hotel-Reviews-1/notebook
+      - file: 6-NLP/5-Hotel-Reviews-2/README
+        sections:
+          - file: 6-NLP/5-Hotel-Reviews-2/assignment
+          - file: 6-NLP/5-Hotel-Reviews-2/notebook
+  - caption: "Timeseries"
+    chapters:
+      - file: 7-TimeSeries/README
+      - file: 7-TimeSeries/1-Introduction/README
+        sections:
+          - file: 7-TimeSeries/1-Introduction/assignment
+      - file: 7-TimeSeries/2-ARIMA/README
+        sections:
+          - file: 7-TimeSeries/2-ARIMA/assignment
+      - file: 7-TimeSeries/3-SVR/README
+        sections:
+          - file: 7-TimeSeries/3-SVR/assignment
+  - caption: "Reinforcement"
+    chapters:
+      - file: 8-Reinforcement/README
+      - file: 8-Reinforcement/1-QLearning/README
+        sections:
+          - file: 8-Reinforcement/1-QLearning/assignment
+          - file: 8-Reinforcement/1-QLearning/notebook
+      - file: 8-Reinforcement/2-Gym/README
+        sections:
+          - file: 8-Reinforcement/2-Gym/assignment
+          - file: 8-Reinforcement/2-Gym/notebook
+  - caption: "Real World"
+    chapters:
+      - file: 9-Real-World/README
+      - file: 9-Real-World/1-Applications/README
+        sections:
+          - file: 9-Real-World/1-Applications/assignment
+      - file: 9-Real-World/2-Debugging-ML-Models/README
+        sections:
+          - file: 9-Real-World/2-Debugging-ML-Models/assignment
