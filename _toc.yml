@@ -128,3 +128,7 @@ parts:
       - file: 9-Real-World/2-Debugging-ML-Models/README
         sections:
           - file: 9-Real-World/2-Debugging-ML-Models/assignment
+  - caption: Back Matter
+    chapters:
+      - file: about-this-book
+        title: About This Book
