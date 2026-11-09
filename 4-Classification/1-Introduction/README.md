@@ -21,7 +21,9 @@ Classification uses various algorithms to determine other ways of determining a 
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
 
-> ### [This lesson is available in R!](./solution/R/lesson_10.html)
+> **On Alps:** Take this quiz in the book: it is the first part of [Quiz: Introduction to classification](alps-quiz-4-1.ipynb).
+
+> ### [This lesson is available in R!](https://microsoft.github.io/ML-For-Beginners/4-Classification/1-Introduction/solution/R/lesson_10.html)
 
 ### Introduction
 
@@ -289,6 +291,8 @@ Now that you have cleaned the data, use [SMOTE](https://imbalanced-learn.org/dev
 This curriculum contains several interesting datasets. Dig through the `data` folders and see if any contain datasets that would be appropriate for binary or multi-class classification? What questions would you ask of this dataset?
 
 ## [Post-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
+
+> **On Alps:** Take this quiz in the book: it is the second part of [Quiz: Introduction to classification](alps-quiz-4-1.ipynb).
 
 ## Review & Self Study
 

@@ -4,6 +4,8 @@ Now that you have explored the dataset in detail, it's time to filter the column
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
 
+> **On Alps:** Take this quiz in the book: it is the first part of [Quiz: Sentiment analysis with hotel reviews](alps-quiz-6-5.ipynb).
+
 ### Filtering & Sentiment Analysis Operations
 
 As you've probably noticed, the dataset has a few issues. Some columns are filled with useless information, others seem incorrect. If they are correct, it's unclear how they were calculated, and answers cannot be independently verified by your own calculations.
@@ -80,7 +82,7 @@ Clean the data just a bit more. Add columns that will be useful later, change th
   # Drop `Additional_Number_of_Scoring`
   df.drop(["Additional_Number_of_Scoring"], axis = 1, inplace=True)
   # Replace `Total_Number_of_Reviews` and `Average_Score` with our own calculated values
-  df.Total_Number_of_Reviews = df.groupby('Hotel_Name').transform('count')
+  df.Total_Number_of_Reviews = df.groupby('Hotel_Name')['Hotel_Name'].transform('count')
   df.Average_Score = round(df.groupby('Hotel_Name').Reviewer_Score.transform('mean'), 1)
   ```
 
@@ -252,7 +254,7 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 nltk.download('vader_lexicon')
 
 # Load the filtered hotel reviews from CSV
-df = pd.read_csv('../../data/Hotel_Reviews_Filtered.csv')
+df = pd.read_csv('../data/Hotel_Reviews_Filtered.csv')
 
 # You code will be added here
 
@@ -276,7 +278,7 @@ Removing the stop words is also a fast operation, removing the stop words from 2
 from nltk.corpus import stopwords
 
 # Load the hotel reviews from CSV
-df = pd.read_csv("../../data/Hotel_Reviews_Filtered.csv")
+df = pd.read_csv("../data/Hotel_Reviews_Filtered.csv")
 
 # Remove stop words - can be slow for a lot of text!
 # Ryan Han (ryanxjhan on Kaggle) has a great post measuring performance of different stop words removal approaches
@@ -362,6 +364,8 @@ To review, the steps are:
 When you started, you had a dataset with columns and data but not all of it could be verified or used. You've explored the data, filtered out what you don't need, converted tags into something useful, calculated your own averages, added some sentiment columns and hopefully, learned some interesting things about processing natural text.
 
 ## [Post-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
+
+> **On Alps:** Take this quiz in the book: it is the second part of [Quiz: Sentiment analysis with hotel reviews](alps-quiz-6-5.ipynb).
 
 ## Challenge
 

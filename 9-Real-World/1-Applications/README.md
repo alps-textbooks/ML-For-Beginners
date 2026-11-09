@@ -10,6 +10,8 @@ While a lot of interest in industry has been garnered by AI, which usually lever
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
 
+> **On Alps:** Take this quiz in the book: it is the first part of [Quiz: Postscript: Machine learning in the real world](alps-quiz-9-1.ipynb).
+
 ## 💰 Finance
 
 The finance sector offers many opportunities for machine learning. Many problems in this area lend themselves to be modeled and solved by using ML.
@@ -137,6 +139,8 @@ The most effective marketing strategies target customers in different ways based
 Identify another sector that benefits from some of the techniques you learned in this curriculum, and discover how it uses ML.
 
 ## [Post-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
+
+> **On Alps:** Take this quiz in the book: it is the second part of [Quiz: Postscript: Machine learning in the real world](alps-quiz-9-1.ipynb).
 
 ## Review & Self Study
 

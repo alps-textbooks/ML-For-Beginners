@@ -2,6 +2,8 @@
  
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
+
+> **On Alps:** This lesson has no quiz in the book: the quiz app has none written for it.
  
 ## Introduction
 
@@ -144,6 +146,9 @@ To prevent statistical or data biases from being introduced in the first place, 
 Think about real-life scenarios where unfairness is evident in model-building and usage. What else should we consider? 
 
 ## [Post-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
+
+> **On Alps:** This lesson has no quiz in the book: the quiz app has none written for it.
+
 ## Review & Self Study 
  
 In this lesson, you have learned some of the practical tools of incorporating responsible AI in machine learning.  

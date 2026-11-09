@@ -12,6 +12,8 @@ In this lesson and the following one, you will learn a bit about time series for
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
 
+> **On Alps:** Take this quiz in the book: it is the first part of [Quiz: Introduction to time series forecasting](alps-quiz-7-1.ipynb).
+
 It's a useful and interesting field with real value to business, given its direct application to problems of pricing, inventory, and supply chain issues. While deep learning techniques have started to be used to gain more insights to better predict future performance, time series forecasting remains a field greatly informed by classic ML techniques.
 
 > Penn State's useful time series curriculum can be found [here](https://online.stat.psu.edu/stat510/lesson/1)
@@ -175,6 +177,8 @@ In the next lesson, you will create an ARIMA model to create some forecasts.
 Make a list of all the industries and areas of inquiry you can think of that would benefit from time series forecasting. Can you think of an application of these techniques in the arts? In Econometrics? Ecology? Retail? Industry? Finance? Where else?
 
 ## [Post-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
+
+> **On Alps:** Take this quiz in the book: it is the second part of [Quiz: Introduction to time series forecasting](alps-quiz-7-1.ipynb).
 
 ## Review & Self Study
 

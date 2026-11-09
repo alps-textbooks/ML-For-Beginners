@@ -5,6 +5,9 @@ In this lesson, you will use the dataset you saved from the last lesson full of 
 You will use this dataset with a variety of classifiers to _predict a given national cuisine based on a group of ingredients_. While doing so, you'll learn more about some of the ways that algorithms can be leveraged for classification tasks.
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
+
+> **On Alps:** Take this quiz in the book: it is the first part of [Quiz: Cuisine classifiers 1](alps-quiz-4-2.ipynb).
+
 # Preparation
 
 Assuming you completed [Lesson 1](../1-Introduction/README.md), make sure that a _cleaned_cuisines.csv_ file exists in the root `/data` folder for these four lessons.
@@ -232,6 +235,8 @@ Since you are using the multiclass case, you need to choose what _scheme_ to use
 In this lesson, you used your cleaned data to build a machine learning model that can predict a national cuisine based on a series of ingredients. Take some time to read through the many options Scikit-learn provides to classify data. Dig deeper into the concept of 'solver' to understand what goes on behind the scenes.
 
 ## [Post-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
+
+> **On Alps:** Take this quiz in the book: it is the second part of [Quiz: Cuisine classifiers 1](alps-quiz-4-2.ipynb).
 
 ## Review & Self Study
 

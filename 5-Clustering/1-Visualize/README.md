@@ -8,6 +8,8 @@ Clustering is a type of [Unsupervised Learning](https://wikipedia.org/wiki/Unsup
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
 
+> **On Alps:** Take this quiz in the book: it is the first part of [Quiz: Introduction to clustering](alps-quiz-5-1.ipynb).
+
 ### Introduction
 
 [Clustering](https://link.springer.com/referenceworkentry/10.1007%2F978-0-387-30164-8_124) is very useful for data exploration. Let's see if it can help discover trends and patterns in the way Nigerian audiences consume music.
@@ -320,6 +322,8 @@ In general, for clustering, you can use scatterplots to show clusters of data, s
 In preparation for the next lesson, make a chart about the various clustering algorithms you might discover and use in a production environment. What kinds of problems is the clustering trying to address?
 
 ## [Post-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
+
+> **On Alps:** Take this quiz in the book: it is the second part of [Quiz: Introduction to clustering](alps-quiz-5-1.ipynb).
 
 ## Review & Self Study
 

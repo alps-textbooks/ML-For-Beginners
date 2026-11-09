@@ -2,6 +2,8 @@
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
 
+> **On Alps:** Take this quiz in the book: it is the first part of [Quiz: K-Means clustering](alps-quiz-5-2.ipynb).
+
 In this lesson, you will learn how to create clusters using Scikit-learn and the Nigerian music dataset you imported earlier. We will cover the basics of K-Means for Clustering. Keep in mind that, as you learned in the earlier lesson, there are many ways to work with clusters and the method you use depends on your data. We will try K-Means as it's the most common clustering technique. Let's get started!
 
 Terms you will learn about:
@@ -235,6 +237,8 @@ Spend some time with this notebook, tweaking parameters. Can you improve the acc
 Hint: Try to scale your data. There's commented code in the notebook that adds standard scaling to make the data columns resemble each other more closely in terms of range. You'll find that while the silhouette score goes down, the 'kink' in the elbow graph smooths out. This is because leaving the data unscaled allows data with less variance to carry more weight. Read a bit more on this problem [here](https://stats.stackexchange.com/questions/21222/are-mean-normalization-and-feature-scaling-needed-for-k-means-clustering/21226#21226).
 
 ## [Post-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
+
+> **On Alps:** Take this quiz in the book: it is the second part of [Quiz: K-Means clustering](alps-quiz-5-2.ipynb).
 
 ## Review & Self Study
 

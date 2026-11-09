@@ -4,6 +4,8 @@ In the previous lessons you learned how to build a basic bot using `TextBlob`, a
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
 
+> **On Alps:** Take this quiz in the book: it is the first part of [Quiz: Translation and sentiment analysis with ML](alps-quiz-6-3.ipynb).
+
 Translation is a very hard problem compounded by the fact that there are thousands of languages and each can have very different grammar rules. One approach is to convert the formal grammar rules for one language, such as English, into a non-language dependent structure, and then translate it by converting back to another language. This approach means that you would take the following steps:
 
 1. **Identification**. Identify or tag the words in input language into nouns, verbs etc.
@@ -65,6 +67,12 @@ blob = TextBlob(
 )
 print(blob.translate(to="fr"))
 
+```
+
+> **Note:** TextBlob 0.18 (2024) removed `translate()`; TextBlob now points to the official Google Translate API instead. So in this book the code above stops with `AttributeError: 'TextBlob' object has no attribute 'translate'`. When this lesson was written, it printed:
+
+```output
+C'est une vérité universellement reconnue, qu'un homme célibataire en possession d'une bonne fortune doit avoir besoin d'une femme!
 ```
 
 `TextBlob` does a pretty good job at the translation: "C'est une vérité universellement reconnue, qu'un homme célibataire en possession d'une bonne fortune doit avoir besoin d'une femme!". 
@@ -143,6 +151,8 @@ Your task is to determine, using sentiment polarity, if *Pride and Prejudice* ha
    1. If the polarity is 1 or -1 store the sentence in an array or list of positive or negative messages
 5. At the end, print out all the positive sentences and negative sentences (separately) and the number of each.
 
+> **Note:** In this book, the download in step 1 is done for you: `pride.txt` in this lesson's folder is Project Gutenberg's plain-text edition, and the lesson's notebook page opens it. It is kept exactly as Project Gutenberg distributes it, with their licence text at the start and end, so remove that part in your code if you want only the novel.
+
 Here is a sample [solution](https://github.com/microsoft/ML-For-Beginners/blob/main/6-NLP/3-Translation-Sentiment/solution/notebook.ipynb).
 
 ✅ Knowledge Check
@@ -177,6 +187,8 @@ Here is a sample [solution](https://github.com/microsoft/ML-For-Beginners/blob/m
 Can you make Marvin even better by extracting other features from the user input?
 
 ## [Post-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
+
+> **On Alps:** Take this quiz in the book: it is the second part of [Quiz: Translation and sentiment analysis with ML](alps-quiz-6-3.ipynb).
 
 ## Review & Self Study
 

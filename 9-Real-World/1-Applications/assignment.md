@@ -1,5 +1,7 @@
 # A ML Scavenger Hunt
 
+> **On Alps:** Write your answer in the book, on [Your answers: A ML Scavenger Hunt](alps-assignment-9-1.ipynb).
+
 ## Instructions
 
 In this lesson, you learned about many real-life use cases that were solved using classical ML. While the use of deep learning, new techniques and tools in AI, and leveraging neural networks has helped speed up the production of tools to help in these sectors, classic ML using the techniques in this curriculum still hold great value.

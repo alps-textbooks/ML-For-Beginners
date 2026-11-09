@@ -2,6 +2,8 @@
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
 
+> **On Alps:** Take this quiz in the book: it is the first part of [Quiz: Introduction to machine learning](alps-quiz-1-1.ipynb).
+
 ---
 
 [![ML for beginners - Introduction to Machine Learning for Beginners](https://img.youtube.com/vi/6mSx_KJxcHI/0.jpg)](https://youtu.be/6mSx_KJxcHI "ML for beginners - Introduction to Machine Learning for Beginners")
@@ -16,6 +18,8 @@ Welcome to this course on classical machine learning for beginners! Whether you'
 
 ---
 ## Getting started with machine learning
+
+> **On your own computer (optional):** In this book, the lessons' Python code runs in your browser, so you can start without installing anything. The setup below is for working through the lessons on your own computer.
 
 Before starting with this curriculum, you need to have your computer set up and ready to run notebooks locally.
 
@@ -136,6 +140,8 @@ In the near future, understanding the basics of machine learning is going to be 
 Sketch, on paper or using an online app like [Excalidraw](https://excalidraw.com/), your understanding of the differences between AI, ML, deep learning, and data science. Add some ideas of problems that each of these techniques are good at solving.
 
 # [Post-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
+
+> **On Alps:** Take this quiz in the book: it is the second part of [Quiz: Introduction to machine learning](alps-quiz-1-1.ipynb).
 
 ---
 # Review & Self Study

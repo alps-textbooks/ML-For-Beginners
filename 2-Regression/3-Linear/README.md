@@ -10,7 +10,9 @@ In this lesson, we focus on understanding the concept before exploring more adva
 > Infographic by [Dasani Madipalli](https://twitter.com/dasani_decoded)
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
 
-> ### [This lesson is available in R!](./solution/R/lesson_3.html)
+> **On Alps:** Take this quiz in the book: it is the first part of [Quiz: Build a regression model using Scikit-learn: regression four ways](alps-quiz-2-3.ipynb).
+
+> ### [This lesson is available in R!](https://microsoft.github.io/ML-For-Beginners/2-Regression/3-Linear/solution/R/lesson_3.html)
 ### Introduction 
 
 So far you have explored what regression is with sample data gathered from the pumpkin pricing dataset that we will use throughout this lesson. You have also visualized it using Matplotlib.
@@ -391,6 +393,8 @@ This should give us the best determination coefficient of almost 97%, and RMSE=2
 Test several different variables in this notebook to see how correlation corresponds to model accuracy.
 
 ## [Post-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
+
+> **On Alps:** Take this quiz in the book: it is the second part of [Quiz: Build a regression model using Scikit-learn: regression four ways](alps-quiz-2-3.ipynb).
 
 ## Review & Self Study
 

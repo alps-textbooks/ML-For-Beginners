@@ -1,5 +1,7 @@
 # Try different clustering methods
 
+> **On Alps:** You can do this assignment in your browser, on [Assignment notebook: Try different clustering methods](alps-assignment-5-2.ipynb).
+
 ## Instructions
 
 In this lesson you learned about K-Means clustering. Sometimes K-Means is not appropriate for your data. Create a notebook using data either from these lessons or from somewhere else (credit your source) and show a different clustering method NOT using K-Means. What did you learn? 

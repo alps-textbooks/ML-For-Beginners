@@ -4,14 +4,14 @@
 
 **Machine Learning for Beginners** · *Classical machine learning with scikit-learn*
 
-**2Sigma School** · Alps edition · Updated October 2026
+**2Sigma School** · Alps edition · Updated November 2026
 
 This course teaches classical machine learning with scikit-learn: regression, classification, clustering, natural language processing and reinforcement learning. This Alps edition runs the book's code in the page, with nothing to install.
 
 | At a glance | |
 |---|---|
-| **79 pages** | The book's chapters and sections |
-| **47 code cells** | Python that runs in the browser, apart from any cells shown for reference |
+| **123 pages** | The book's chapters and sections |
+| **189 code cells** | Python that runs in the browser, apart from any cells shown for reference |
 
 ## How to Use It
 
@@ -41,6 +41,10 @@ This edition differs from its source so that the book works on Alps, where its c
 - cells shown for reference, when they need something the browser cannot do
 - cells marked as expected to fail, such as a blank for the reader to fill in
 - corrections to Markdown or code, so that a page renders and runs
+- pages added to a lesson after its own pages: its quiz questions as multiple-choice cards, its written assignment with a box for the answer, and an assignment on the lesson's data as a notebook that runs in the browser
+- notes headed **On Alps** under the quiz links and assignment titles, most of them pointing to those pages
+
+The data file `6-NLP/data/Hotel_Reviews.csv` is a random sample of 10,000 of the 515,738 reviews in [515K Hotel Reviews Data in Europe](https://www.openml.org/d/43712), which is listed under CC0 and was originally scraped from Booking.com.
 
 The numbering of the book's chapters is not affected: this page comes after them. The source above shows the book as its authors published it.
 

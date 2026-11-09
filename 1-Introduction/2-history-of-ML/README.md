@@ -5,6 +5,8 @@
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
 
+> **On Alps:** Take this quiz in the book: it is the first part of [Quiz: History of machine learning](alps-quiz-1-2.ipynb).
+
 ---
 
 [![ML for beginners - History of Machine Learning](https://img.youtube.com/vi/N6wxM4wZ7V0/0.jpg)](https://youtu.be/N6wxM4wZ7V0 "ML for beginners - History of Machine Learning")
@@ -133,6 +135,8 @@ It remains to be seen what the future holds, but it is important to understand t
 Dig into one of these historical moments and learn more about the people behind them. There are fascinating characters, and no scientific discovery was ever created in a cultural vacuum. What do you discover?
 
 ## [Post-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
+
+> **On Alps:** Take this quiz in the book: it is the second part of [Quiz: History of machine learning](alps-quiz-1-2.ipynb).
 
 ---
 ## Review & Self Study

@@ -7,6 +7,8 @@ The process of building, using, and maintaining machine learning models and the 
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
 
+> **On Alps:** Take this quiz in the book: it is the first part of [Quiz: Techniques of Machine Learning](alps-quiz-1-4.ipynb).
+
 [![ML for beginners - Techniques of Machine Learning](https://img.youtube.com/vi/4NGM0U2ZSHU/0.jpg)](https://youtu.be/4NGM0U2ZSHU "ML for beginners - Techniques of Machine Learning")
 
 > 🎥 Click the image above for a short video working through this lesson.
@@ -108,6 +110,8 @@ In these lessons, you will discover how to use these steps to prepare, build, te
 Draw a flow chart reflecting the steps of a ML practitioner. Where do you see yourself right now in the process? Where do you predict you will find difficulty? What seems easy to you?
 
 ## [Post-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
+
+> **On Alps:** Take this quiz in the book: it is the second part of [Quiz: Techniques of Machine Learning](alps-quiz-1-4.ipynb).
 
 ## Review & Self Study
 

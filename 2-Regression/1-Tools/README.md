@@ -6,7 +6,9 @@
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
 
-> ### [This lesson is available in R!](./solution/R/lesson_1.html)
+> **On Alps:** Take this quiz in the book: it is the first part of [Quiz: Get started with Python and Scikit-learn for regression models](alps-quiz-2-1.ipynb).
+
+> ### [This lesson is available in R!](https://microsoft.github.io/ML-For-Beginners/2-Regression/1-Tools/solution/R/lesson_1.html)
 
 ## Introduction
 
@@ -214,6 +216,8 @@ Congratulations, you built your first linear regression model, created a predict
 
 Plot a different variable from this dataset. Hint: edit this line: `X = X[:,2]`. Given this dataset's target, what are you able to discover about the progression of diabetes as a disease?
 ## [Post-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
+
+> **On Alps:** Take this quiz in the book: it is the second part of [Quiz: Get started with Python and Scikit-learn for regression models](alps-quiz-2-1.ipynb).
 
 ## Review & Self Study
 

@@ -8,6 +8,8 @@ In the previous lesson, you learned a bit about time series forecasting and load
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
 
+> **On Alps:** Take this quiz in the book: it is the first part of [Quiz: Time series forecasting with ARIMA](alps-quiz-7-2.ipynb).
+
 ## Introduction
 
 In this lesson, you will discover a specific way to build models with [ARIMA: *A*uto*R*egressive *I*ntegrated *M*oving *A*verage](https://wikipedia.org/wiki/Autoregressive_integrated_moving_average). ARIMA models are particularly suited to fit data that shows [non-stationarity](https://wikipedia.org/wiki/Stationary_process).
@@ -384,6 +386,8 @@ Check the accuracy of your model by testing its mean absolute percentage error (
 Dig into the ways to test the accuracy of a Time Series Model. We touch on MAPE in this lesson, but are there other methods you could use? Research them and annotate them. A helpful document can be found [here](https://otexts.com/fpp2/accuracy.html)
 
 ## [Post-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
+
+> **On Alps:** Take this quiz in the book: it is the second part of [Quiz: Time series forecasting with ARIMA](alps-quiz-7-2.ipynb).
 
 ## Review & Self Study
 

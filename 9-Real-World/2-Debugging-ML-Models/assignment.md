@@ -1,5 +1,7 @@
 # Explore Responsible AI (RAI) dashboard
 
+> **On Alps:** The notebooks it links are on GitHub, outside this book. Write your answer in the book, on [Your answers: Explore Responsible AI (RAI) dashboard](alps-assignment-9-2.ipynb).
+
 ## Instructions
 
 In this lesson you learned about the RAI dashboard, a suite of components built on "open-source" tools  to help data scientists perform error analysis, data exploration, fairness assessment, model interpretability, counterfact/what-if assesments and causal analysis on AI systems." For this assignment, explore some of RAI dashboard's sample [notebooks](https://github.com/Azure/RAI-vNext-Preview/tree/main/examples/notebooks) and report your findings in a paper or presentation.

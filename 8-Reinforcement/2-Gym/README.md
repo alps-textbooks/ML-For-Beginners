@@ -4,6 +4,8 @@ The problem we have been solving in the previous lesson might seem like a toy pr
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
 
+> **On Alps:** Take this quiz in the book: it is the first part of [Quiz: CartPole Skating](alps-quiz-8-2.ipynb).
+
 ## Introduction
 
 In this lesson we will apply the same principles of Q-Learning to a problem with **continuous state**, i.e. a state that is given by one or more real numbers. We will deal with the following problem:
@@ -32,13 +34,15 @@ First, let's install the gym and import required libraries (code block 1):
 
 ```python
 import sys
-!{sys.executable} -m pip install gym 
+!{sys.executable} -m pip install gymnasium
 
-import gym
+import gymnasium as gym
 import matplotlib.pyplot as plt
 import numpy as np
 import random
 ```
+
+> **On Alps:** OpenAI Gym is no longer maintained and has no version that runs in the browser, so this edition installs [Gymnasium](https://gymnasium.farama.org/), the library that continues it, and imports it under the name `gym`. Gymnasium's `env.reset()` returns the observation together with an `info` dictionary, and its `env.step()` returns five values instead of four; the code in this lesson is adjusted for both. `env.render()` draws nothing here: Gymnasium prints a warning and the simulation carries on.
 
 ## Exercise - initialize a cartpole environment
 
@@ -84,10 +88,13 @@ To see how the environment works, let's run a short simulation for 100 steps. At
     done = False
     while not done:
        env.render()
-       obs, rew, done, info = env.step(env.action_space.sample())
+       obs, rew, terminated, truncated, info = env.step(env.action_space.sample())
+       done = terminated or truncated
        print(f"{obs} -> {rew}")
     env.close()
     ```
+
+    > **On Alps:** In Gymnasium, `step` returns `obs, rew, terminated, truncated, info`. `terminated` says the pole fell or the cart left the track, and `truncated` that the episode reached its limit of 500 steps. The code sets `done = terminated or truncated`, which is what Gym's single `done` flag meant.
 
     You will end up seeing something like this in the notebook output:
 
@@ -135,7 +142,7 @@ In our example, we will go with the second approach. As you may notice later, de
 
     ```python
     def discretize(x):
-        return tuple((x/np.array([0.25, 0.25, 0.01, 0.1])).astype(np.int))
+        return tuple((x/np.array([0.25, 0.25, 0.01, 0.1])).astype(int))
     ```
 
 1. Let's also explore another discretization method using bins: (code block 7)
@@ -164,7 +171,8 @@ In our example, we will go with the second approach. As you may notice later, de
     done = False
     while not done:
        #env.render()
-       obs, rew, done, info = env.step(env.action_space.sample())
+       obs, rew, terminated, truncated, info = env.step(env.action_space.sample())
+       done = terminated or truncated
        #print(discretize_bins(obs))
        print(discretize(obs))
     env.close()
@@ -230,8 +238,8 @@ We can also make two improvements to our algorithm from the previous lesson:
     Qmax = 0
     cum_rewards = []
     rewards = []
-    for epoch in range(100000):
-        obs = env.reset()
+    for epoch in range(2000):
+        obs, info = env.reset()
         done = False
         cum_reward=0
         # == do the simulation ==
@@ -245,20 +253,23 @@ We can also make two improvements to our algorithm from the previous lesson:
                 # exploration - randomly chose the action
                 a = np.random.randint(env.action_space.n)
     
-            obs, rew, done, info = env.step(a)
+            obs, rew, terminated, truncated, info = env.step(a)
+            done = terminated or truncated
             cum_reward+=rew
             ns = discretize(obs)
             Q[(s,a)] = (1 - alpha) * Q.get((s,a),0) + alpha * (rew + gamma * max(qvalues(ns)))
         cum_rewards.append(cum_reward)
         rewards.append(cum_reward)
         # == Periodically print results and calculate average reward ==
-        if epoch%5000==0:
+        if epoch%500==0:
             print(f"{epoch}: {np.average(cum_rewards)}, alpha={alpha}, epsilon={epsilon}")
             if np.average(cum_rewards) > Qmax:
                 Qmax = np.average(cum_rewards)
                 Qbest = Q
             cum_rewards=[]
     ```
+
+    > **On Alps:** This edition trains for 2,000 epochs and prints the average every 500, instead of 100,000 epochs every 5,000: the full run takes more than 20 minutes in the browser, and 2,000 epochs take under a minute. After 2,000 epochs the average reward is still well below the 195 the text describes; run more epochs on your own computer to get close to it.
 
 What you may notice from those results:
 
@@ -306,14 +317,15 @@ To make learning more stable, it makes sense to adjust some of our hyperparamete
 It would be interesting to actually see how the trained model behaves. Let's run the simulation and follow the same action selection strategy as during training, sampling according to the probability distribution in Q-Table: (code block 13)
 
 ```python
-obs = env.reset()
+obs, info = env.reset()
 done = False
 while not done:
    s = discretize(obs)
    env.render()
    v = probs(np.array(qvalues(s)))
    a = random.choices(actions,weights=v)[0]
-   obs,_,done,_ = env.step(a)
+   obs, _, terminated, truncated, _ = env.step(a)
+   done = terminated or truncated
 env.close()
 ```
 
@@ -330,6 +342,8 @@ You should see something like this:
 > **Task 4**: Here we were not selecting the best action on each step, but rather sampling with corresponding probability distribution. Would it make more sense to always select the best action, with the highest Q-Table value? This can be done by using `np.argmax` function to find out the action number corresponding to highers Q-Table value. Implement this strategy and see if it improves the balancing.
 
 ## [Post-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
+
+> **On Alps:** Take this quiz in the book: it is the second part of [Quiz: CartPole Skating](alps-quiz-8-2.ipynb).
 
 ## Assignment
 [Train a Mountain Car](assignment.md)

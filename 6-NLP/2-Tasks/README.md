@@ -4,6 +4,8 @@ For most *natural language processing* tasks, the text to be processed, must be 
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
 
+> **On Alps:** Take this quiz in the book: it is the first part of [Quiz: Common natural language processing tasks and techniques](alps-quiz-6-2.ipynb).
+
 Let's discover common techniques used in processing text. Combined with machine learning, these techniques help you to analyse large amounts of text efficiently. Before applying ML to these tasks, however, let's understand the problems encountered by an NLP specialist.
 
 ## Tasks common to NLP
@@ -122,6 +124,14 @@ Let's use a library called TextBlob as it contains helpful APIs for tackling the
 
 > Note: A useful [Quick Start](https://textblob.readthedocs.io/en/dev/quickstart.html#quickstart) guide is available for TextBlob that is recommended for experienced Python developers 
 
+> **Note:** TextBlob uses data from NLTK. Run this first to download it:
+
+```python
+import nltk
+for r in ["punkt_tab", "brown", "conll2000", "averaged_perceptron_tagger_eng", "wordnet", "movie_reviews"]:
+    nltk.download(r)
+```
+
 When attempting to identify *noun phrases*, TextBlob offers several options of extractors to find noun phrases. 
 
 1. Take a look at `ConllExtractor`.
@@ -204,6 +214,8 @@ Implement the bot in the prior knowledge check and test it on a friend. Can it t
 Take a task in the prior knowledge check and try to implement it. Test the bot on a friend. Can it trick them? Can you make your bot more 'believable?'
 
 ## [Post-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
+
+> **On Alps:** Take this quiz in the book: it is the second part of [Quiz: Common natural language processing tasks and techniques](alps-quiz-6-2.ipynb).
 
 ## Review & Self Study
 

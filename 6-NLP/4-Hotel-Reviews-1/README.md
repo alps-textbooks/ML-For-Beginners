@@ -8,6 +8,8 @@ In this section you will use the techniques in the previous lessons to do some e
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
 
+> **On Alps:** Take this quiz in the book: it is the first part of [Quiz: Sentiment analysis with hotel reviews - processing the data](alps-quiz-6-4.ipynb).
+
 ### Introduction
 
 So far you've learned about how text data is quite unlike numerical types of data. If it's text that was written or spoken by a human, if can be analysed to find patterns and frequencies, sentiment and meaning. This lesson takes you into a real data set with a real challenge: **[515K Hotel Reviews Data in Europe](https://www.kaggle.com/jiashenliu/515k-hotel-reviews-data-in-europe)** and includes a [CC0: Public Domain license](https://creativecommons.org/publicdomain/zero/1.0/). It was scraped from Booking.com from public sources. The creator of the dataset was Jiashen Liu.
@@ -20,6 +22,8 @@ You will need:
 * pandas
 * NLTK, [which you should install locally](https://www.nltk.org/install.html)
 * The data set which is available on Kaggle [515K Hotel Reviews Data in Europe](https://www.kaggle.com/jiashenliu/515k-hotel-reviews-data-in-europe). It is around 230 MB unzipped. Download it to the root `/data` folder associated with these NLP lessons.
+
+> **On Alps:** You don't need to download this data set. This book includes a random sample of 10,000 of its 515,738 reviews as `Hotel_Reviews.csv` in the `data` folder, so your counts will be smaller than the ones this lesson quotes.
 
 ## Exploratory data analysis
 
@@ -149,7 +153,7 @@ import time
 print("Loading data file now, this could take a while depending on file size")
 start = time.time()
 # df is 'DataFrame' - make sure you downloaded the file to the data folder
-df = pd.read_csv('../../data/Hotel_Reviews.csv')
+df = pd.read_csv('../data/Hotel_Reviews.csv')
 end = time.time()
 print("Loading took " + str(round(end - start, 2)) + " seconds")
 ```
@@ -394,6 +398,8 @@ Now that you have explored the dataset, in the next lesson you will filter the d
 This lesson demonstrates, as we saw in previous lessons, how critically important it is to understand your data and its foibles before performing operations on it. Text-based data, in particular, bears careful scrutiny. Dig through various text-heavy datasets and see if you can discover areas that could introduce bias or skewed sentiment into a model. 
 
 ## [Post-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
+
+> **On Alps:** Take this quiz in the book: it is the second part of [Quiz: Sentiment analysis with hotel reviews - processing the data](alps-quiz-6-4.ipynb).
 
 ## Review & Self Study
 

@@ -13,6 +13,8 @@ By using reinforcement learning and a simulator (the game), you can learn how to
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
 
+> **On Alps:** Take this quiz in the book: it is the first part of [Quiz: Introduction to Reinforcement Learning and Q-Learning](alps-quiz-8-1.ipynb).
+
 ## Prerequisites and Setup
 
 In this lesson, we will be experimenting with some code in Python. You should be able to run the Jupyter Notebook code from this lesson, either on your computer or somewhere in the cloud.
@@ -163,7 +165,7 @@ An algorithm that we will discuss here is called **Q-Learning**. In this algorit
 It is called a Q-Table because it is often convenient to represent it as a table, or multi-dimensional array. Since our board has dimensions `width` x `height`, we can represent the Q-Table using a numpy array with shape `width` x `height` x `len(actions)`: (code block 6)
 
 ```python
-Q = np.ones((width,height,len(actions)),dtype=np.float)*1.0/len(actions)
+Q = np.ones((width,height,len(actions)),dtype=float)*1.0/len(actions)
 ```
 
 Notice that we initialize all the values of the Q-Table with an equal value, in our case - 0.25. This corresponds to the "random walk" policy, because all moves in each state are equally good. We can pass the Q-Table to the `plot` function in order to visualize the table on the board: `m.plot(Q)`.
@@ -246,12 +248,13 @@ Run them learning algorithm through 5000 experiments, also called **epochs**: (c
             m.move(dpos,check_correctness=False) # we allow player to move outside the board, which terminates episode
             r = reward(m)
             cum_reward += r
-            if r==end_reward or cum_reward < -1000:
-                lpath.append(n)
-                break
             alpha = np.exp(-n / 10e5)
             gamma = 0.5
             ai = action_idx[a]
+            if r==end_reward or r==goal_reward or cum_reward < -1000:
+                Q[x,y,ai] = (1 - alpha) * Q[x,y,ai] + alpha * r
+                lpath.append(n)
+                break
             Q[x,y,ai] = (1 - alpha) * Q[x,y,ai] + alpha * (r + gamma * Q[x+dpos[0], y+dpos[1]].max())
             n+=1
 ```
@@ -298,11 +301,15 @@ print_statistics(qpolicy)
 
 After running this code, you should get a much smaller average path length than before, in the range of 3-6.
 
+> **Note:** In this edition, a training episode ends when Peter reaches an apple, so the training above finishes in a few seconds in the browser. With that change, expect an average path length of about 6 to 8.
+
 ## Investigating the learning process
 
 As we have mentioned, the learning process is a balance between exploration and exploration of gained knowledge about the structure of problem space. We have seen that the results of learning (the ability to help an agent to find a short path to the goal) has improved, but it is also interesting to observe how the average path length behaves during the learning process:
 
 <img src="images/lpathlen1.png"/>
+
+> **Note:** This graph, and the observations below it, come from the original training code, in which an episode went on after Peter reached an apple. Because an episode in this edition ends at the apple, a plot of `lpath` from the training above is much flatter, at about 5 to 7 steps per episode throughout.
 
 The learnings can be summarized as:
 
@@ -315,6 +322,8 @@ The learnings can be summarized as:
 Overall, it is important to remember that the success and quality of the learning process significantly depends on parameters, such as learning rate, learning rate decay, and discount factor. Those are often called **hyperparameters**, to distinguish them from **parameters**, which we optimize during training (for example, Q-Table coefficients). The process of finding the best hyperparameter values is called **hyperparameter optimization**, and it deserves a separate topic.
 
 ## [Post-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
+
+> **On Alps:** Take this quiz in the book: it is the second part of [Quiz: Introduction to Reinforcement Learning and Q-Learning](alps-quiz-8-1.ipynb).
 
 ## Assignment 
 [A More Realistic World](assignment.md)

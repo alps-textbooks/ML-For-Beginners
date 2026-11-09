@@ -4,7 +4,9 @@
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
 
-> ### [This lesson is available in R!](./solution/R/lesson_4.html)
+> **On Alps:** Take this quiz in the book: it is the first part of [Quiz: Logistic regression to predict categories](alps-quiz-2-4.ipynb).
+
+> ### [This lesson is available in R!](https://microsoft.github.io/ML-For-Beginners/2-Regression/4-Logistic/solution/R/lesson_4.html)
 
 ## Introduction
 
@@ -385,6 +387,8 @@ In future lessons on classifications, you will learn how to iterate to improve y
 There's a lot more to unpack regarding logistic regression! But the best way to learn is to experiment. Find a dataset that lends itself to this type of analysis and build a model with it. What do you learn? tip: try [Kaggle](https://www.kaggle.com/search?q=logistic+regression+datasets) for interesting datasets.
 
 ## [Post-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
+
+> **On Alps:** Take this quiz in the book: it is the second part of [Quiz: Logistic regression to predict categories](alps-quiz-2-4.ipynb).
 
 ## Review & Self Study
 

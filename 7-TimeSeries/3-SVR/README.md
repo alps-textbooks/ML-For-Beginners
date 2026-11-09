@@ -4,6 +4,8 @@ In the previous lesson, you learned how to use ARIMA model to make time series p
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ml/) 
 
+> **On Alps:** Take this quiz in the book: it is the first part of [Quiz: Time Series Forecasting with Support Vector Regressor](alps-quiz-7-3.ipynb).
+
 ## Introduction
 
 In this lesson, you will discover a specific way to build models with [**SVM**: **S**upport **V**ector **M**achine](https://en.wikipedia.org/wiki/Support-vector_machine) for regression, or **SVR: Support Vector Regressor**. 
@@ -368,6 +370,8 @@ MAPE:  2.0572089029888656 %
 - Try using different values for `timesteps` for the model to look back to make prediction.
 
 ## [Post-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
+
+> **On Alps:** Take this quiz in the book: it is the second part of [Quiz: Time Series Forecasting with Support Vector Regressor](alps-quiz-7-3.ipynb).
 
 ## Review & Self Study
 

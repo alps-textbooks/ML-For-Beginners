@@ -4,6 +4,8 @@
 > Sketchnote by [Tomomi Imura](https://www.twitter.com/girlie_mac)
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
+
+> **On Alps:** Take this quiz in the book: it is the first part of [Quiz: Building Machine Learning solutions with responsible AI](alps-quiz-1-3.ipynb).
  
 ## Introduction
 
@@ -127,6 +129,8 @@ To prevent harms from being introduced in the first place, we should:
 Think about real-life scenarios where a model's untrustworthiness is evident in model-building and usage. What else should we consider? 
 
 ## [Post-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
+
+> **On Alps:** Take this quiz in the book: it is the second part of [Quiz: Building Machine Learning solutions with responsible AI](alps-quiz-1-3.ipynb).
 
 ## Review & Self Study 
  

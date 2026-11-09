@@ -4,6 +4,8 @@ In this second classification lesson, you will explore more ways to classify num
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
 
+> **On Alps:** Take this quiz in the book: it is the first part of [Quiz: Cuisine classifiers 2](alps-quiz-4-3.ipynb).
+
 ### Prerequisite
 
 We assume that you have completed the previous lessons and have a cleaned dataset in your `data` folder called _cleaned_cuisines.csv_ in the root of this 4-lesson folder.
@@ -225,6 +227,8 @@ This method of Machine Learning "combines the predictions of several base estima
 Each of these techniques has a large number of parameters that you can tweak. Research each one's default parameters and think about what tweaking these parameters would mean for the model's quality.
 
 ## [Post-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
+
+> **On Alps:** Take this quiz in the book: it is the second part of [Quiz: Cuisine classifiers 2](alps-quiz-4-3.ipynb).
 
 ## Review & Self Study
 

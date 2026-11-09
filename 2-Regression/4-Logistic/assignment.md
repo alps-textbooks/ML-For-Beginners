@@ -1,5 +1,7 @@
 # Retrying some Regression
 
+> **On Alps:** You can do this assignment in your browser, on [Assignment notebook: Retrying some Regression](alps-assignment-2-4.ipynb).
+
 ## Instructions
 
 In the lesson, you used a subset of the pumpkin data. Now, go back to the original data and try to use all of it, cleaned and standardized, to build a Logistic Regression model.

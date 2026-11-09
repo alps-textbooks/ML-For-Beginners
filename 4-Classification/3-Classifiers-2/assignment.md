@@ -1,5 +1,7 @@
 # Parameter Play
 
+> **On Alps:** You can do this assignment in your browser, on [Assignment notebook: Parameter Play](alps-assignment-4-3.ipynb).
+
 ## Instructions
 
 There are a lot of parameters that are set by default when working with these classifiers. Intellisense in VS Code can help you dig into them. Adopt one of the ML Classification Techniques in this lesson and retrain models tweaking various parameter values. Build a notebook explaining why some changes help the model quality while others degrade it. Be detailed in your answer.

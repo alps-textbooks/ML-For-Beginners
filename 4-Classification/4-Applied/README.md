@@ -10,6 +10,8 @@ One of the most useful practical uses of machine learning is building recommenda
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
 
+> **On Alps:** Take this quiz in the book: it is the first part of [Quiz: Build a Cuisine Recommender Web App](alps-quiz-4-4.ipynb).
+
 In this lesson you will learn:
 
 - How to build a model and save it as an Onnx model
@@ -113,6 +115,8 @@ We will use the 'SVC' library which has good accuracy.
     weighted avg       0.79      0.79      0.79      1199
     ```
 
+> **On your own computer:** From here on, the lesson converts the model with skl2onnx, views it in Netron and serves it from a web page with a local web server. None of that runs in this book: skl2onnx needs the onnx package, which the browser's Python here cannot install. Do these steps on your own computer. The training steps above run in this lesson's notebook, and the converted model is in the repository as [solution/model.onnx](https://github.com/microsoft/ML-For-Beginners/blob/main/4-Classification/4-Applied/solution/model.onnx).
+
 ### Convert your model to Onnx
 
 Make sure to do the conversion with the proper Tensor number. This dataset has 380 ingredients listed, so you need to notate that number in `FloatTensorType`:
@@ -212,7 +216,7 @@ You can use your model directly in a web app. This architecture also allows you 
             </div> 
     ```
 
-    Notice that each checkbox is given a value.  This reflects the index where the ingredient is found according to the dataset. Apple, for example, in this alphabetic list, occupies the fifth column, so its value is '4' since we start counting at 0. You can consult the [ingredients spreadsheet](../data/ingredient_indexes.csv) to discover a given ingredient's index.
+    Notice that each checkbox is given a value.  This reflects the index where the ingredient is found according to the dataset. Apple, for example, in this alphabetic list, occupies the fifth column, so its value is '4' since we start counting at 0. You can consult the [ingredients spreadsheet](https://github.com/microsoft/ML-For-Beginners/blob/main/4-Classification/data/ingredient_indexes.csv) to discover a given ingredient's index.
 
     Continuing your work in the index.html file, add a script block where the model is called after the final closing `</div>`. 
 
@@ -297,9 +301,11 @@ Open a terminal session in Visual Studio Code in the folder where your index.htm
 Congratulations, you have created a 'recommendation' web app  with a few fields. Take some time to build out this system!
 ## 🚀Challenge
 
-Your web app is very minimal, so continue to build it out using ingredients and their indexes from the [ingredient_indexes](../data/ingredient_indexes.csv) data. What flavor combinations work to create a given national dish?
+Your web app is very minimal, so continue to build it out using ingredients and their indexes from the [ingredient_indexes](https://github.com/microsoft/ML-For-Beginners/blob/main/4-Classification/data/ingredient_indexes.csv) data. What flavor combinations work to create a given national dish?
 
 ## [Post-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
+
+> **On Alps:** Take this quiz in the book: it is the second part of [Quiz: Build a Cuisine Recommender Web App](alps-quiz-4-4.ipynb).
 
 ## Review & Self Study
 

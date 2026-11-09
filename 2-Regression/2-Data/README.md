@@ -6,7 +6,9 @@ Infographic by [Dasani Madipalli](https://twitter.com/dasani_decoded)
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
 
-> ### [This lesson is available in R!](./solution/R/lesson_2.html)
+> **On Alps:** Take this quiz in the book: it is the first part of [Quiz: Build a regression model using Scikit-learn: prepare and visualize data](alps-quiz-2-2.ipynb).
+
+> ### [This lesson is available in R!](https://microsoft.github.io/ML-For-Beginners/2-Regression/2-Data/solution/R/lesson_2.html)
 
 ## Introduction
 
@@ -276,6 +278,8 @@ A common workflow is to reach for Seaborn to explore your data quickly, then dro
 Explore the different types of visualization that Matplotlib and Seaborn offer. Which types are most appropriate for regression problems?
 
 ## [Post-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
+
+> **On Alps:** Take this quiz in the book: it is the second part of [Quiz: Build a regression model using Scikit-learn: prepare and visualize data](alps-quiz-2-2.ipynb).
 
 ## Review & Self Study
 

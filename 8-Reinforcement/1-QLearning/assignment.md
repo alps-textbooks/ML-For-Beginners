@@ -13,7 +13,7 @@ Use the original [notebook.ipynb](notebook.ipynb) notebook as a starting point f
 
 Modify the reward function above according to the rules of the game, run the reinforcement learning algorithm to learn the best strategy for winning the game, and compare the results of random walk with your algorithm in terms of number of games won and lost.
 
-> **Note**: In your new world, the state is more complex, and in addition to human position also includes fatigue and energy levels. You may chose to represent the state as a tuple (Board,energy,fatigue), or define a class for the state (you may also want to derive it from `Board`), or even modify the original `Board` class inside [rlboard.py](rlboard.py).
+> **Note**: In your new world, the state is more complex, and in addition to human position also includes fatigue and energy levels. You may chose to represent the state as a tuple (Board,energy,fatigue), or define a class for the state (you may also want to derive it from `Board`), or even modify the original `Board` class inside [rlboard.py](https://github.com/microsoft/ML-For-Beginners/blob/main/8-Reinforcement/1-QLearning/rlboard.py).
 
 In your solution, please keep the code responsible for random walk strategy, and compare the results of your algorithm with random walk at the end.
 

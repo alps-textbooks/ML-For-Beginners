@@ -4,6 +4,8 @@ This lesson covers a brief history and important concepts of *natural language p
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
 
+> **On Alps:** Take this quiz in the book: it is the first part of [Quiz: Introduction to natural language processing](alps-quiz-6-1.ipynb).
+
 ## Introduction
 
 NLP, as it is commonly known, is one of the best-known areas where machine learning has been applied and used in production software.
@@ -46,10 +48,13 @@ In this section, you will need, and use:
 - **Visual Studio Code + extension**. We will use Visual Studio Code and its Python extension. You can also use a Python IDE of your choice.
 - **TextBlob**. [TextBlob](https://github.com/sloria/TextBlob) is a simplified text processing library for Python. Follow the instructions on the TextBlob site to install it on your system (install the corpora as well, as shown below):
 
-   ```bash
-   pip install -U textblob
-   python -m textblob.download_corpora
+   ```python
+   import nltk
+   for r in ["punkt_tab", "brown", "conll2000", "averaged_perceptron_tagger_eng", "wordnet", "movie_reviews"]:
+       nltk.download(r)
    ```
+
+> **Note:** In this book, TextBlob is installed for you the first time you import it, and the code above downloads the NLTK data that TextBlob uses. On your own computer, install TextBlob first with `pip install -U textblob`.
 
 > 💡 Tip: You can run Python directly in VS Code environments. Check the [docs](https://code.visualstudio.com/docs/languages/python?WT.mc_id=academic-77952-leestott) for more information.
 
@@ -150,6 +155,8 @@ Choose one of the "stop and consider" elements above and either try to implement
 In the next lesson, you'll learn about a number of other approaches to parsing natural language and machine learning.
 
 ## [Post-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
+
+> **On Alps:** Take this quiz in the book: it is the second part of [Quiz: Introduction to natural language processing](alps-quiz-6-1.ipynb).
 
 ## Review & Self Study
 

@@ -13,6 +13,8 @@ To do this, you need to build a web app using Flask.
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
 
+> **On Alps:** Take this quiz in the book: it is the first part of [Quiz: Build a Web App to use a ML Model](alps-quiz-3-1.ipynb).
+
 ## Building an app
 
 There are several ways to build web apps to consume machine learning models. Your web architecture may influence the way your model is trained. Imagine that you are working in a business where the data science group has trained a model that they want you to use in an app.
@@ -48,7 +50,7 @@ In this lesson you'll use data from 80,000 UFO sightings, gathered by [NUFORC](h
 - **Long example description.** "A man emerges from a beam of light that shines on a grassy field at night and he runs towards the Texas Instruments parking lot".
 - **Short example description.** "the lights chased us".
 
-The [ufos.csv](./data/ufos.csv) spreadsheet includes columns about the `city`, `state` and `country` where the sighting occurred, the object's `shape` and its `latitude` and `longitude`.
+The [ufos.csv](https://github.com/microsoft/ML-For-Beginners/blob/main/3-Web-App/1-Web-App/data/ufos.csv) spreadsheet includes columns about the `city`, `state` and `country` where the sighting occurred, the object's `shape` and its `latitude` and `longitude`.
 
 In the blank [notebook](notebook.ipynb) included in this lesson:
 
@@ -154,6 +156,8 @@ print(model.predict([[50,44,-12]]))
 The model returns **'3'**, which is the country code for the UK. Wild! 👽
 
 ## Exercise - build a Flask app
+
+> **On your own computer:** A Flask app is a web server, and a web server cannot run in the browser. Do this exercise on your own computer, with Python installed. The training and pickling steps above run in this lesson's notebook.
 
 Now you can build a Flask app to call your model and return similar results, but in a more visually pleasing way.
 
@@ -335,6 +339,8 @@ In a professional setting, you can see how good communication is necessary betwe
 Instead of working in a notebook and importing the model to the Flask app, you could train the model right within the Flask app! Try converting your Python code in the notebook, perhaps after your data is cleaned, to train the model from within the app on a route called `train`. What are the pros and cons of pursuing this method?
 
 ## [Post-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
+
+> **On Alps:** Take this quiz in the book: it is the second part of [Quiz: Build a Web App to use a ML Model](alps-quiz-3-1.ipynb).
 
 ## Review & Self Study
 
